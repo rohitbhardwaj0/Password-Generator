@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Genrator</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="icon" href="https://www.google.com/s2/u/0/favicons?domain=css-tricks.com">
+</head>
+<body>
+
+    <!--video background-->
+    <video class="video-background" loop muted autoplay>
+        <source src="/Letters - 5157.mp4"></source> 
+    </video>
+    <div class="video-overlay"></div>
+
+    <div class="container">
+        <h2>Password Generator</h2>
+        <div class="sub-container">
+            <span class="result"></span>
+                <button class="btn" id="clipboard">
+                    <i class="fa-solid fa-copy"></i>
+                </button>
+        </div>
+        <div class="set-container">
+            <div class="setup">
+                <label>password length</label>
+                <input type="number" class="length" min="2" max="15" value="7"/>
+            </div>
+            <div class="setup">
+                <label>include uppercase letters</label>
+                <input type="checkbox" class="uppercase" checked/>
+            </div>
+            <div class="setup">
+                <label>include lowercase letters</label>
+                <input type="checkbox" class="lowercase" checked/>
+            </div>
+            <div class="setup">
+                <label>include numbers</label>
+                <input type="checkbox" class="numbers" checked/>
+            </div>
+            <div class="setup">
+                <label>include symbols</label>
+                <input type="checkbox" class="symbols" checked/>
+            </div>
+        </div>
+        <button class="btn" id="generate">
+            Generate Password
+        </button>
+        @Rohit
+    </div>
+
+
+    <script src="/script.js"></script>
+    
+</body>
+</html>
